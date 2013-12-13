@@ -1,4 +1,4 @@
-#' @include install_the_verse.R
+#' @include hadleyverse.R
 NULL
 
 #' Load Hadleyverse packages
@@ -9,7 +9,9 @@ NULL
 #' not installed, it will be installed from CRAN.
 #' 
 #' @param ... additional arguments passed to \code{\link{require}}
-#' @inheritParams install_the_hadley_verse
+#' @param which \code{userland} (default) will load (and if necessary, first 
+#' install) \code{userland} packages while \code{devland} will load (and 
+#' if necessary, first install) \code{devland} packages.
 #' @export 
 
 load_the_hadley_verse <- function (which = 'userland', ...)

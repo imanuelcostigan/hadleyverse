@@ -7,6 +7,11 @@ load_the_hadley_verse(which = "userland", ...)
 \arguments{
   \item{...}{additional arguments passed to
   \code{\link{require}}}
+
+  \item{which}{\code{userland} (default) will load (and if
+  necessary, first install) \code{userland} packages while
+  \code{devland} will load (and if necessary, first
+  install) \code{devland} packages.}
 }
 \description{
 People in \code{userland} will load \code{ggplot2},

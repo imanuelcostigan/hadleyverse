@@ -12,5 +12,4 @@ Depends:
 License: LICENSE
 Collate:
     'hadleyverse.R'
-    'install_the_verse.R'
     'load_the_verse.R'
