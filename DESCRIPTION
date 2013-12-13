@@ -9,8 +9,6 @@ Author: Imanuel Costigan <i.costigan@me.com>
 Maintainer: Imanuel Costigan <i.costigan@me.com>
 Depends:
     R (>= 3.0)
-Suggests:
-    devtools
 License: LICENSE
 Collate:
     'hadleyverse.R'
