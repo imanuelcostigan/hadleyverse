@@ -1,11 +1,11 @@
 hadleyverse
 ===========
 
-A package to install packages from the hadleyverse
+A package to load (or first install and then load) packages from the hadleyverse
 
 ## List of packages
 
-The list of packages that will be installed by default include:
+Userland packages:
 
 * ggplot2
 * lubridate
@@ -13,22 +13,21 @@ The list of packages that will be installed by default include:
 * stringr
 * plyr
 
+Devland packages:
+
+* devtools
+* testthat
+* roxygen2
+* assertthat
+
 ## How to
 
-Install the packages:
-
 ```
-install_the_hadley_verse()
-```
-
-Load the packages:
-
-```
-load_the_hadley_verse()
+load_the_hadley_verse() # defaults to userland
+load_the_hadley_verse('devland')
 ```
 
 ## Possible future features
 
 * Install the bleeding edge hadleyverse from GitHub
-* Install developer hadleyverse (devtools, roxygen2, testthat, etc)
 * Figure out inter-dependencies
