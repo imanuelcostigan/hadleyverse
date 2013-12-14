@@ -18,7 +18,7 @@ load_the_hadley_verse <- function (which = 'userland', ...)
   if (identical(which, 'userland')) 
     packages <- c('ggplot2', 'reshape2', 'stringr', 'plyr', 'lubridate')
   else
-    packages <- c('devtools', 'testtthat', 'roxygen2', 'assertthat')
+    packages <- c('devtools', 'testthat', 'roxygen2', 'assertthat')
   for (package in packages) {
     if (!isTRUE(require(package, character.only=TRUE))) {
       install.packages(package)
