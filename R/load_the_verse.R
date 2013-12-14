@@ -1,12 +1,10 @@
-#' @include hadleyverse.R
-NULL
-
 #' Load Hadleyverse packages
 #' 
 #' People in \code{userland} will load \code{ggplot2}, \code{reshape2},
-#' \code{stringr} and \code{plyr}. People in dev (developer) land will get 
-#' \code{devtools}, \code{testthat} and \code{roxygen2}. If a package is 
-#' not installed, it will be installed from CRAN.
+#' \code{stringr}, \code{plyr} and \code{lubridate}. People in dev (developer) 
+#' land will get \code{devtools}, \code{roxygen2}, \code{testthat} and
+#' \code{assertthat}. If a package is not installed, it will be installed from 
+#' CRAN.
 #' 
 #' @param ... additional arguments passed to \code{\link{require}}
 #' @param which \code{userland} (default) will load (and if necessary, first 
@@ -18,9 +16,9 @@ load_the_hadley_verse <- function (which = 'userland', ...)
 {
   stopifnot(which %in% c('userland', 'devland'))
   if (identical(which, 'userland')) 
-    packages <- user_land_packages
+    packages <- c('ggplot2', 'reshape2', 'stringr', 'plyr', 'lubridate')
   else
-    packages <- dev_land_packages
+    packages <- c('devtools', 'testtthat', 'roxygen2', 'assertthat')
   for (package in packages) {
     if (!isTRUE(require(package, character.only=TRUE))) {
       install.packages(package)

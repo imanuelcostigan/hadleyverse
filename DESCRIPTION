@@ -1,6 +1,6 @@
 Package: hadleyverse
 Type: Package
-Title: Install and load a suite of Hadley Wickham packages
+Title: Install and load a suite of Hadley Wickham packages.
 Description: More about what it does (maybe more than one line)
 URL: https://github.com/imanuelcostigan/hadleyverse
 Version: 0.1
@@ -10,6 +10,3 @@ Maintainer: Imanuel Costigan <i.costigan@me.com>
 Depends:
     R (>= 3.0)
 License: LICENSE
-Collate:
-    'hadleyverse.R'
-    'load_the_verse.R'
